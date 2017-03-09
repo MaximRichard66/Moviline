@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_consultar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.giner.proyectopmm.Activity_compra">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/moviline"
+            android:id="@+id/imageView3"
+            android:contentDescription="" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="@string/buscarCliente"
+            android:ems="10"
+            android:id="@+id/search" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:id="@+id/listViewClientesCompra"
+            android:layout_height="300dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:clickable="true"
+            android:layout_margin="15dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/add_user"
+            android:id="@+id/addUser"
+            app:backgroundTint="@android:color/holo_blue_bright"
+            android:layout_gravity="right"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
